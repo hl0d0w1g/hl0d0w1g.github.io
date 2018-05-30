@@ -1,22 +1,25 @@
 /*
 color
-B2623C
-FFAF89
-FF9E6F
-2AB2A6
-6FFFF2
-*/
 
-img{
-	width: 200px;
+*/
+body{
+	background-color: #343434;
 }
 
 .remove-float{
 	float: none;
 }
 
-.margin-top{
-	margin-top: 50px;
+.margin-top1{
+	margin-top: 30px;
+}
+
+.margin-top2{
+	margin-top: 10px;
+}
+
+.no-list li{
+	list-style-type: none;
 }
 
 .raleway{
@@ -29,26 +32,41 @@ img{
 	left: 0; 
 	width: 100%;
 	height: 100%;
-	filter: brightness(50%);
+	filter: brightness(20%);
 	z-index: -1
 }
 
 #profile{
-	width:300px;
-    height:300px;
-    border-radius:150px;
+	width:200px;
+    height:200px;
+    border-radius:100px;
 }
 
 #name{
 	color: #00D6C2;
-	font-family: 'Raleway', cursive;
+	font-family: 'Raleway', serif;
+	font-size: 70px;
 }
 
-#sec-name{
-	color: #00B297;
-	font-family: 'Raleway', bold;
+#text1{
+	color: #2AA8C7;
+	font-family: 'Raleway', serif;
+	font-size: 20px;
 }
 
-#link{
-	color: #6FFFF2;
+#text2{
+	color: #00D6C2;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 30px;
+}
+
+#flag{
+	width:3%;
+    height:3%;
+}
+
+#rs{
+	width:7%;
+    height:7%;	
 }
