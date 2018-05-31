@@ -2,31 +2,61 @@
 color
 
 */
-body{
-	background-color: #343434;
+html,body {
+	font-family: 'Raleway', sans-serif;
+  	height: 100%;
+  	margin: 0;
 }
 
-.remove-float{
-	float: none;
+section {
+  	height: 100vh;
 }
 
-.margin-top1{
-	margin-top: 30px;
+section:nth-child(1) {
+  	background-image: url(imgs/background.jpg);
+  	background-size: cover;
+  	background-position: center;
 }
 
-.margin-top2{
-	margin-top: 10px;
-}
-
-.no-list li{
-	list-style-type: none;
+section:nth-child(2) {
+  	background-color: #343434;
 }
 
 .raleway{
 	font-family: 'Raleway', cursive;
 }
 
+.remove-float{
+	float: none;
+}
+
+.padding-top1{
+	padding-top: 0.5%;
+}
+
+.padding-top2{
+	padding-top: 1.5%;
+}
+
+.padding-bottom1{
+	padding-bottom: 0.5%;
+}
+
+.no-list li{
+	list-style-type: none;
+}
+
+.no-padding{
+	padding: 0px;
+}
+
+.bottom{
+    position:absolute;
+    bottom:0px;
+}
+
 #wallpaper{
+	background:no-repeat fixed center;
 	position: absolute; 
 	top: 0; 
 	left: 0; 
