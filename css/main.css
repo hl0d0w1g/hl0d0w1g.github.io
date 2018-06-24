@@ -7,69 +7,85 @@ html,body {
   	height: 100%;
   	margin: 0;
 }
-
+header{
+	width: 100%;
+	overflow: hidden;
+	background: #400453;
+}
 section {
   	height: 100vh;
 }
-
-section:nth-child(1) {
+section:nth-child(2) {
   	background-image: url(imgs/background.jpg);
   	background-size: cover;
   	background-position: center;
 }
-
-section:nth-child(2) {
-  	background-color: #343434;
-}
-
 section:nth-child(3) {
   	background-color: #343434;
 }
-
 section:nth-child(4) {
   	background-color: #343434;
 }
-
+section:nth-child(5) {
+  	background-color: #343434;
+}
 hr{
     height: 1px;
     border: 0;
     background-color: lightblue;
     margin: 0px;
 }
-
+a.nounderline:link { 
+	text-decoration:none; 
+}
+.wrapper{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
 .raleway{
 	font-family: 'Raleway', cursive;
 }
-
 .remove-float{
 	float: none;
 }
-
 .padding-top1{
 	padding-top: 0.5%;
 }
-
 .padding-top2{
 	padding-top: 1.5%;
 }
-
 .padding-bottom1{
 	padding-bottom: 1%;
 }
-
 .no-list li{
 	list-style-type: none;
 }
-
 .no-padding{
 	padding: 0px;
 }
-
+.no-margin{
+	margin: 0px;
+}
 .bottom{
     position:absolute;
     bottom:0px;
 }
-
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	width:100%;
+}
+#circle {
+     width: 10px;
+     height: 10px;
+     border-radius: 5px;
+     background: #222529;
+     margin: auto;
+     border-top: 10px;
+}
 #wallpaper{
 	background:no-repeat fixed center;
 	position: absolute; 
@@ -80,47 +96,39 @@ hr{
 	filter: brightness(20%);
 	z-index: -1
 }
-
 #profile{
-	width:250px;
-    height:250px;
-    border-radius:125px;
+	width:200px;
+    height:200px;
+    border-radius:100px;
     border: 4px solid #2AA8C7;
 }
-
 #name{
 	color: #00D6C2;
 	font-family: 'Raleway', serif;
 	font-size: 70px;
 }
-
 #text1{
 	color: #2AA8C7;
 	font-family: 'Raleway', serif;
-	font-size: 20px;
+	font-size: 120%;
 }
-
 #text2{
 	color: #00D6C2;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 	font-size: 30px;
 }
-
 #title{
 	color: #00D6C2;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	font-size: 50px;
 }
-
-#flag{
-	width:3%;
-    height:3%;
-}
-
-
-#rs{
+#sr{
 	width:7%;
     height:7%;	
+}
+#arrow{
+	width:1.5%;
+	height:1.5%;
 }
