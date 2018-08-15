@@ -78,6 +78,9 @@ a.nounderline:link {
 	top:0;
 	width:100%;
 }
+#header-image{
+    border-radius:100px;
+}
 #circle {
      width: 10px;
      height: 10px;
