@@ -2,136 +2,60 @@
 color
 
 */
-html,body {
-	font-family: 'Raleway', sans-serif;
-  	height: 100%;
-  	margin: 0;
-}
-header{
-	width: 100%;
-	overflow: hidden;
-	background: #400453;
-}
-section {
-  	height: 100vh;
-}
-section:nth-child(2) {
-  	background-image: url(imgs/background.jpg);
-  	background-size: cover;
-  	background-position: center;
-}
-section:nth-child(3) {
-  	background-color: #343434;
-}
-section:nth-child(4) {
-  	background-color: #343434;
-}
-section:nth-child(5) {
-  	background-color: #343434;
-}
-hr{
+
+
+#h-line{
     height: 1px;
     border: 0;
     background-color: lightblue;
     margin: 0px;
 }
-a.nounderline:link { 
-	text-decoration:none; 
+#dot{
+	color: lightblue;
 }
-.wrapper{
-	width: 90%;
-	max-width: 1000px;
-	margin: auto;
-	overflow: hidden;
-}
-.raleway{
-	font-family: 'Raleway', cursive;
-}
-.remove-float{
-	float: none;
-}
-.padding-top1{
-	padding-top: 0.5%;
-}
-.padding-top2{
-	padding-top: 1.5%;
-}
-.padding-bottom1{
-	padding-bottom: 1%;
-}
-.no-list li{
-	list-style-type: none;
-}
-.no-padding{
-	padding: 0px;
-}
-.no-margin{
-	margin: 0px;
-}
-.bottom{
-    position:absolute;
-    bottom:0px;
-}
-.menu-fixed {
-	position:fixed;
-	z-index:1000;
-	top:0;
-	width:100%;
-}
-#header-image{
-    border-radius:100px;
-}
-#circle {
-     width: 10px;
-     height: 10px;
-     border-radius: 5px;
-     background: #222529;
-     margin: auto;
-     border-top: 10px;
-}
-#wallpaper{
-	background:no-repeat fixed center;
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	width: 100%;
-	height: 100%;
-	filter: brightness(20%);
-	z-index: -1
-}
-#profile{
+#profile-img{
 	width:200px;
     height:200px;
     border-radius:100px;
     border: 4px solid #2AA8C7;
 }
 #name{
+	margin: 0px;
 	color: #00D6C2;
+	font-size: 250%;
 	font-family: 'Raleway', serif;
-	font-size: 70px;
+	font-weight: 200;
 }
-#text1{
-	color: #2AA8C7;
-	font-family: 'Raleway', serif;
-	font-size: 120%;
-}
-#text2{
+#surname{
+	margin: 0px;
 	color: #00D6C2;
+	font-size: 250%;
+	font-family: 'Raleway', serif;
+	font-weight: 300;
+}
+#actual-occupation{
+	color: #00D6C2;
+	font-size: 175%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
-	font-size: 30px;
 }
 #title{
 	color: #00D6C2;
+	font-size: 200%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	font-size: 50px;
 }
-#sr{
-	width:7%;
-    height:7%;	
+#info-1{
+
 }
-#arrow{
-	width:1.5%;
-	height:1.5%;
+#info-2{
+	
 }
+#date{
+
+}
+#paragraph{
+
+}
+
+
