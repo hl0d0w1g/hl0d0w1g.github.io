@@ -1,10 +1,10 @@
 
-.color-1 {color: #7DCEA0;}
-.color-2 {color: #E5E8E8;}
-.color-3 {color: #F8F9F9;}
-.color-4 {color: #566573;}
-.color-5 {color: #DAF7A6;}
-.color-6 {color: #FFC300;}
+.color-1 {color: #7DCEA0;} /* green lime */
+.color-2 {color: #E5E8E8;} /* gray */
+.color-3 {color: #F8F9F9;} /* white */
+.color-4 {color: #566573;} /* dark gray */
+.color-5 {color: #DAF7A6;} /* cambiar */
+.color-6 {color: #2C3E50;} /* black */
 
 .no-margin{
 	margin: 0px;
@@ -72,7 +72,10 @@
 	font-weight: 200;
 }
 #paragraph{
-
+	color: #2C3E50;
+	font-size: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
 }
 #company-img{
 	width: 325px;
@@ -80,10 +83,27 @@
 	border-radius: 30px;
 }
 #social-network{
-	padding: 5px;
+	padding: 5px 15px 5px 15px;
 	color: #7DCEA0;
 	text-decoration: none;
 	font-size: 30px;
 }
-
+#mail{
+	padding: 5px;
+	color: #7DCEA0;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
+#mail-ico{
+	padding: 5px;
+	color: #7DCEA0;
+	font-size: 20px;	
+}
+#all-rights-reserved{
+	color: #E5E8E8;
+	font-size: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
 
