@@ -1,5 +1,6 @@
 # My personal website
 
+This is the code of my personal website, which is hosted on github pages at lcambero.github.io
 
 ## Author
 
