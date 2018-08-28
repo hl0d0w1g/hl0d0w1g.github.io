@@ -1,9 +1,11 @@
-.color-1 {color: #7DCEA0;} /* green lime */
-.color-2 {color: #E5E8E8;} /* gray */
-.color-3 {color: #F8F9F9;} /* white */
-.color-4 {color: #566573;} /* dark gray */
-.color-5 {color: #5DADE2;} /* light blue */
-.color-6 {color: #2C3E50;} /* black */
+:root {
+    --color-1: #7DCEA0; /* green lime */
+    --color-2: #E5E8E8; /* gray */
+    --color-3: #F8F9F9; /* white */
+    --color-4: #566573; /* dark gray */
+    --color-5: #5DADE2; /* light blue */
+    --color-6: #2C3E50; /* black */
+}
 
 html,
 body,
@@ -20,14 +22,14 @@ body,
 	padding: 0px;
 }
 .skills-card-head{
-	background-color: #5DADE2;
+	background-color: var(--color-5);
 }
 .skills-card-button{
 	border: 0px;
 	border-radius: 0px;
 	padding: 10px 20px 10px 20px;
-	color: #F8F9F9;
-	background-color: #5DADE2;
+	color: var(--color-3);
+	background-color: var(--color-5);
 	outline: none;
 	text-decoration: none;
 	font-size: 20px;
@@ -35,21 +37,18 @@ body,
 	font-weight: 300;
 }
 .skills-card-content{
-	background-color: #AED6F1;
-	color: #F8F9F9;
+	background-color: var(--color-2);
+	color: var(--color-3);
 }
 #h-line{
     height: 1px;
     border: 0;
-    background-color: #7DCEA0;
+    background-color: var(--color-1);
     margin: 0px;
-}
-#navbar-element{
-	padding: 0px 20px 0px 20px;
 }
 #profile-img{
 	background-image: url(../images/background-image.png);
-	background-color: #F8F9F9;
+	background-color: var(--color-3);
 	background-position: center;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
@@ -58,20 +57,20 @@ body,
 }
 #name{
 	margin: 0px;
-	color: #F8F9F9;
+	color: var(--color-3);
 	font-size: 250%;
 	font-family: 'Raleway', serif;
 	font-weight: 200;
 }
 #surname{
 	margin: 0px;
-	color: #F8F9F9;
+	color: var(--color-3);
 	font-size: 250%;
 	font-family: 'Raleway', serif;
 	font-weight: 300;
 }
 #actual-occupation{
-	color: #F8F9F9;
+	color: var(--color-3);
 	font-size: 175%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
@@ -79,7 +78,7 @@ body,
 #title{
 	margin: 0px;
 	padding: 5px;
-	color: #7DCEA0;
+	color: var(--color-1);
 	font-size: 200%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
@@ -90,10 +89,14 @@ body,
 	font-weight: 300;
 }
 #info-2{
-	color: #7DCEA0;
+	color: var(--color-1);
 	font-size: 120%;
 	font-family: 'Raleway', serif;
 	font-weight: 300;
+	transition: color 0.5s;
+}
+#info-2:hover{
+	color: #52BE80;
 }
 #date{
 	font-size: 100%;
@@ -101,7 +104,7 @@ body,
 	font-weight: 200;
 }
 #paragraph{
-	color: #2C3E50;
+	color: var(--color-6);
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
@@ -110,40 +113,57 @@ body,
 	width: 325px;
     height: 244px;
 	border-radius: 30px;
+	transition: filter 0.3s;
+}
+#company-img:hover{
+	filter: blur(1px);
 }
 #values-img{
 	background-image: url(../images/background-image.jpg);
-	background-color: #F8F9F9;
+	background-color: var(--color-3);
 	background-position: center;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	border-color: none;
 	width:100%;
 	max-height: 480px;
+	transition: opacity 0.5s;
 }
 #values{
-	color: #566573;
+	color: var(--color-4);
 	margin: 0px;
 	padding: 8px;
 	font-size: 150%;
 	font-family: 'Raleway', serif;
-	font-weight: 300;
+	font-weight: 400;
+	transition: color 0.5s;
+}
+#values:hover{
+	color: var(--color-5);
 }
 #social-network{
 	padding: 5px 15px 5px 15px;
-	color: #7DCEA0;
+	color: var(--color-1);
 	text-decoration: none;
 	font-size: 30px;
+	transition: color 0.5s;
+}
+#social-network:hover{
+	color: var(--color-2);
 }
 #mail{
 	padding: 5px;
-	color: #7DCEA0;
+	color: var(--color-1);
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
+	transition: color 0.5s;
+}
+#mail:hover{
+	color: var(--color-2);
 }
 #footer-info{
-	color: #E5E8E8;
+	color: var(--color-2);
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
