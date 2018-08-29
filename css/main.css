@@ -93,7 +93,7 @@ body,
 	font-size: 120%;
 	font-family: 'Raleway', serif;
 	font-weight: 300;
-	transition: color 0.5s;
+	transition: color 0.3s;
 }
 #info-2:hover{
 	color: #52BE80;
@@ -127,7 +127,6 @@ body,
   	border-color: none;
 	width:100%;
 	max-height: 480px;
-	transition: opacity 0.5s;
 }
 #values{
 	color: var(--color-4);
@@ -136,17 +135,18 @@ body,
 	font-size: 150%;
 	font-family: 'Raleway', serif;
 	font-weight: 400;
-	transition: color 0.5s;
+	transition: color 0.3s, font-size 0.3s;
 }
 #values:hover{
 	color: var(--color-5);
+	font-size: 165%;
 }
 #social-network{
 	padding: 5px 15px 5px 15px;
 	color: var(--color-1);
 	text-decoration: none;
 	font-size: 30px;
-	transition: color 0.5s;
+	transition: color 0.3s;
 }
 #social-network:hover{
 	color: var(--color-2);
@@ -157,7 +157,7 @@ body,
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
-	transition: color 0.5s;
+	transition: color 0.3s;
 }
 #mail:hover{
 	color: var(--color-2);
