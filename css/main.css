@@ -119,17 +119,17 @@ body,
 	filter: blur(1px);
 }
 #values-img{
-	background-image: url(../images/background-image.jpg);
+	background-image: url(../images/values.jpg);
 	background-color: var(--color-3);
-	background-position: center;
+	background-position: 50% 55%;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	border-color: none;
 	width:100%;
-	max-height: 480px;
+	max-height: 520px;
 }
 #values{
-	color: var(--color-4);
+	color: var(--color-2);
 	margin: 0px;
 	padding: 8px;
 	font-size: 150%;
@@ -167,4 +167,8 @@ body,
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
+}
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+
 }
