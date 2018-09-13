@@ -29,6 +29,9 @@ body,
     background-color: var(--color-3);
     border-color: var(--color-1) var(--color-1) var(--color-3);
 }
+.nav-link.active:hover{
+	border-bottom-color: var(--color-3);
+}
 .nav-tabs .nav-link:focus, .nav-tabs 
 .nav-link:hover {
     border-bottom-color: var(--color-1);
@@ -106,10 +109,10 @@ body,
 	width: 325px;
     height: 244px;
 	border-radius: 30px;
-	transition: filter 0.3s;
+	transition: opacity 0.3s;
 }
 #company-img:hover{
-	filter: blur(1px);
+	opacity: 0.8;
 }
 #values-img{
 	background-image: url(../images/values.jpg);
