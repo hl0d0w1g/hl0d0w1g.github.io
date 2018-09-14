@@ -3,7 +3,7 @@
     --color-2: #E5E8E8; /* gray */
     --color-3: #F8F9F9; /* white */
     --color-4: #566573; /* dark gray */
-    --color-5: #5DADE2; /* light blue */
+    --color-5: #27AE60; /* dark green lime */
     --color-6: #2C3E50; /* black */
 }
 
@@ -21,20 +21,20 @@ body,
 .no-padding{
 	padding: 0px;
 }
-.nav-tabs {
+.nav-tabs{
     border-bottom: 1px solid var(--color-1);
 }
-.nav-tabs .nav-link.active {
+.nav-link{
+    color: var(--color-1);
+}
+.nav-tabs .nav-link:hover{
+	color: var(--color-5);
+    border-color: var(--color-2) var(--color-2) transparent;
+}
+.nav-tabs .nav-link.active{
     color: var(--color-4);
     background-color: var(--color-3);
     border-color: var(--color-1) var(--color-1) var(--color-3);
-}
-.nav-link.active:hover{
-	border-bottom-color: var(--color-3);
-}
-.nav-tabs .nav-link:focus, .nav-tabs 
-.nav-link:hover {
-    border-bottom-color: var(--color-1);
 }
 #h-line{
     height: 1px;
@@ -92,7 +92,7 @@ body,
 	transition: color 0.3s;
 }
 #info-2:hover{
-	color: #52BE80;
+	color: var(--color-5);
 }
 #date{
 	font-size: 100%;
