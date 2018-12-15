@@ -26,14 +26,17 @@ body,
 .container-fluid{
   	height: 100%;
 }
-.no-margin{
-	margin: 0px;
+.full-height{
+	height: 100%;
+}
+.bg-general{
+	background-color: var(--color-3);
+}
+.bg-second{
+	background-color: var(--color-2);
 }
 .no-border{
 	border: 0px;
-}
-.no-padding{
-	padding: 0px;
 }
 .h-line{
     height: 1px;
@@ -182,7 +185,7 @@ body,
 	background-image: url(../images/values.jpg);
 	background-color: var(--color-3);
 	background-size: cover;
-	background-position: 50% 57%;
+	background-position: 50% 48%;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	border-color: none;
@@ -203,6 +206,9 @@ body,
 .values:hover{
 	color: var(--color-1);
 	font-size: 165%;
+}
+.bg-footer{
+	background-color: var(--color-4);
 }
 .social-network{
 	padding: 5px 30px 5px 30px;
