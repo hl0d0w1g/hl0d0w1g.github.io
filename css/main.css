@@ -86,6 +86,7 @@ body,
 	font-size: 150%;
 	font-family: 'Raleway', serif;
 	font-weight: 300;
+	text-decoration: none;
 }
 .info-2{
 	color: var(--color-1);
@@ -181,6 +182,30 @@ body,
 	max-height: 85px;
 	max-width: 85px;
 }
+.elm-programming{
+	width: 85%; 
+	background-color: #5daec6 !important;
+}
+.cplusplus-programming{
+	width: 70%; 
+	background-color: #f34b7d !important;
+}
+.python-programming{
+	width: 40%;
+	background-color: #3572a5 !important;
+}
+.html-programming{
+	width: 60%; 
+	background-color: #e34c26 !important;
+}
+.javascript-programming{
+	width: 25%; 
+	background-color: #f1e05a !important;
+}
+.java-programming{
+	width: 35%;
+	background-color: #b07118 !important;
+}
 #values-img{
 	background-image: url(../images/values.jpg);
 	background-color: var(--color-3);
@@ -243,30 +268,5 @@ body,
 	}
 	#skills-mobile{
 		display: block;
-	}
-}
-
-.circle-progress{
-    border:5px solid;
-    width:100px;
-    height:100px;
-    border-radius:50%;
-    animation: progressanim 1s linear;
-    position: relative;
-    margin: auto;
-}
-.html5{
-	border-color:orange transparent transparent;
-}
-.css{
-	border-color:green transparent transparent;
-}
-@keyframes progressanim{
-	0%{
-
-	}
-	100%{
-		transform:rotate(360deg);
-		filter:hue-rotate(360deg);
 	}
 }
