@@ -1,4 +1,4 @@
-:root{
+:root {
     --color-1: #7DCEA0; /* green lime */
     --color-2: #E5E8E8; /* gray */
     --color-3: #F8F9F9; /* white */
@@ -6,45 +6,56 @@
     --color-5: #27AE60; /* dark green lime */
     --color-6: #2C3E50; /* black */
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
 	position: fixed;
 	right: 0;
     width: 6px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
 	background: transparent;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: var(--color-1); 
     border-radius: 10px;
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
     background: var(--color-5); 
 }
+
 html,
 body,
-.container-fluid{
+.container-fluid {
   	height: 100%;
 }
-.full-height{
+
+.full-height {
 	height: 100%;
 }
-.bg-general{
+
+.bg-general {
 	background-color: var(--color-3);
 }
-.bg-second{
+
+.bg-second {
 	background-color: var(--color-2);
 }
-.no-border{
+
+.no-border {
 	border: 0px;
 }
-.h-line{
+
+.h-line {
     height: 1px;
     border: 0;
     background-color: var(--color-1);
     margin: 0px;
 }
-#profile-img{
+
+#profile-img {
 	background-image: url(../images/profile.jpg);
 	background-size: cover;
 	background-color: var(--color-3);
@@ -54,27 +65,52 @@ body,
 	width:100%;
 	max-height: 1080px;
 }
-#name{
+
+#name {
 	margin: 0px;
 	color: var(--color-3);
 	font-size: 250%;
 	font-family: 'Raleway', serif;
 	font-weight: 200;
 }
-#surname{
+
+#surname {
 	margin: 0px;
 	color: var(--color-3);
 	font-size: 250%;
 	font-family: 'Raleway', serif;
 	font-weight: 300;
 }
-#actual-occupation{
+
+#actual-occupation {
 	color: var(--color-3);
 	font-size: 175%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 }
-.title{
+
+.typewriter h2 {
+	overflow: hidden; 
+	border-right: .15em solid orange;
+	white-space: nowrap; 
+	margin: 0 auto; 
+	letter-spacing: .15em;
+	animation: 
+	  typing 3.5s steps(40, end),
+	  blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange; }
+  }
+
+.title {
 	margin: 0px;
 	padding: 5px;
 	color: var(--color-1);
@@ -82,73 +118,90 @@ body,
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
-.info-1{
+
+.info-1 {
 	font-size: 150%;
 	font-family: 'Raleway', serif;
 	font-weight: 300;
 	text-decoration: none;
 }
-.info-2{
+
+.info-2 {
 	color: var(--color-1);
 	font-size: 120%;
 	font-family: 'Raleway', serif;
 	font-weight: 300;
 	transition: color 0.3s;
 }
-.info-2:hover{
+
+.info-2:hover {
 	color: var(--color-5);
 }
-.date{
+
+.date {
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 }
-.paragraph{
+
+.paragraph {
 	color: var(--color-6);
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
-.company-img{
+
+.company-img {
 	width: 325px;
     height: 244px;
 	border-radius: 30px;
 	transition: opacity 0.3s;
 }
-.company-img:hover{
+
+.company-img:hover {
 	opacity: 0.8;
 }
-#skills-no-mobile{
+
+#skills-no-mobile {
 	display: block;
 }
-#skills-mobile{
+
+#skills-mobile {
 	display: none;
 }
+
 .nav-tabs {
     border-bottom: 1px solid var(--color-1);
 }
-.nav-link{
+
+.nav-link {
     color: var(--color-1);
 }
-.nav-tabs .nav-link:hover{
+
+.nav-tabs .nav-link:hover {
 	color: var(--color-5);
     border-color: var(--color-2) var(--color-2) transparent;
 }
-.nav-tabs .nav-link.active{
+
+.nav-tabs .nav-link.active {
     color: var(--color-4);
     background-color: var(--color-3);
     border-color: var(--color-1) var(--color-1) var(--color-3);
 }
-.card{
+
+.card {
 	border: 0px;
 }
-.card-header{
+
+.card-header {
 	background-color: var(--color-1);
 }
+
 .card-header:first-child {
     border-radius: 0px;
 }
-.btn-link{
+
+.btn-link {
 	color: var(--color-3);
 	font-size: 100%;
 	font-family: 'Raleway', serif;
@@ -157,56 +210,69 @@ body,
 	height: 100%;
 	text-decoration: none;
 }
+
 .btn-link:hover {
 	color: var(--color-3);
     text-decoration: none; 
 }
-.card-body{
+
+.card-body {
 	background-color: var(--color-2);
 }
-.skills-icon{
+
+.skills-icon {
 	padding: 10px;
 	font-size: 50px;
 }
-.btn-outline-success{
+
+.btn-outline-success {
     color: var(--color-1);
     border-color: var(--color-1);
 }
-.btn-outline-success:hover{
+
+.btn-outline-success:hover {
     color: var(--color-3);
     background-color: var(--color-1);
     border-color: var(--color-1);
 }
-.skills-flag-icon{
+
+.skills-flag-icon {
 	padding: 10px;
 	max-height: 85px;
 	max-width: 85px;
 }
-.elm-programming{
+
+.elm-programming {
 	width: 85%; 
 	background-color: #5daec6 !important;
 }
-.cplusplus-programming{
+
+.cplusplus-programming {
 	width: 70%; 
 	background-color: #f34b7d !important;
 }
-.python-programming{
+
+.python-programming {
 	width: 40%;
 	background-color: #3572a5 !important;
 }
-.html-programming{
+
+.html-programming {
 	width: 60%; 
 	background-color: #e34c26 !important;
 }
-.javascript-programming{
+
+.javascript-programming {
 	width: 25%; 
 	background-color: #f1e05a !important;
 }
-.java-programming{
+
+.java-programming {
 	width: 35%;
 	background-color: #b07118 !important;
 }
-#values-img{
+
+#values-img {
 	background-image: url(../images/values.jpg);
 	background-color: var(--color-3);
 	background-size: cover;
@@ -218,7 +284,8 @@ body,
 	height: auto;
 	padding: 15px 0px 10px 0px;
 }
-.values{
+
+.values {
 	color: var(--color-2);
 	margin: 10px;
 	padding: 5px;
@@ -228,24 +295,29 @@ body,
 	font-weight: 400;
 	transition: color 0.3s, font-size 0.3s;
 }
-.values:hover{
+
+.values:hover {
 	color: var(--color-1);
 	font-size: 165%;
 }
-.bg-footer{
+
+.bg-footer {
 	background-color: var(--color-4);
 }
-.social-network{
+
+.social-network {
 	padding: 5px 30px 5px 30px;
 	color: var(--color-1);
 	text-decoration: none;
 	font-size: 30px;
 	transition: color 0.3s;
 }
-.social-network:hover{
+
+.social-network:hover {
 	color: var(--color-2);
 }
-.mail{
+
+.mail {
 	padding: 5px;
 	color: var(--color-1);
 	font-size: 20px;
@@ -253,20 +325,23 @@ body,
 	font-weight: 200;
 	transition: color 0.3s;
 }
-.mail:hover{
+
+.mail:hover {
 	color: var(--color-2);
 }
-.footer-info{
+
+.footer-info {
 	color: var(--color-2);
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 }
-@media only screen and (max-width: 700px), only screen and (max-device-width: 700px){
-	#skills-no-mobile{
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	#skills-no-mobile {
 		display: none;
 	}
-	#skills-mobile{
+	#skills-mobile {
 		display: block;
 	}
 }
