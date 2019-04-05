@@ -4,7 +4,8 @@
     --color-3: #F8F9F9; /* white */
     --color-4: #566573; /* dark gray */
     --color-5: #27AE60; /* dark green lime */
-    --color-6: #2C3E50; /* black */
+	--color-6: #2C3E50; /* black */
+	--color-7: #40c7d5; /* cian */
 }
 
 ::-webkit-scrollbar {
@@ -41,7 +42,12 @@ body,
 }
 
 .bg-second {
-	background-color: var(--color-2);
+	background-image: linear-gradient(
+		to right, 
+		var(--color-7),
+		var(--color-1),
+		var(--color-7)
+	);
 }
 
 .no-border {
@@ -52,6 +58,13 @@ body,
     height: 1px;
     border: 0;
     background-color: var(--color-1);
+    margin: 0px;
+}
+
+.h-line-2 {
+    height: 1px;
+    border: 0;
+    background-color: var(--color-2);
     margin: 0px;
 }
 
@@ -98,22 +111,51 @@ body,
 	animation: 
 	  typing 3.5s steps(40, end),
 	  blink-caret .75s step-end infinite;
-  }
+}
   
-  @keyframes typing {
+@keyframes typing {
 	from { width: 0 }
 	to { width: 100% }
-  }
+}
   
-  @keyframes blink-caret {
+@keyframes blink-caret {
 	from, to { border-color: transparent }
 	50% { border-color: orange; }
-  }
+}
+
+.hobby-img {
+	width: 100%;
+	max-width: 460px;
+	border-radius: 10px;
+}
+
+.card-img-overlay{
+	background-color: rgba(0, 0, 0, 0.55); 
+	border-radius: 10px;
+}
+
+.project-link {
+	color: var(--color-1);
+	transition: color 0.3s;
+}
+
+.project-link:hover {
+	color: var(--color-5);
+}
 
 .title {
 	margin: 0px;
 	padding: 5px;
 	color: var(--color-1);
+	font-size: 200%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+.title-2 {
+	margin: 0px;
+	padding: 5px;
+	color: var(--color-2);
 	font-size: 200%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
@@ -152,8 +194,8 @@ body,
 }
 
 .company-img {
-	width: 325px;
-    height: 244px;
+	max-width: 375px;
+	width: 100%;
 	border-radius: 30px;
 	transition: opacity 0.3s;
 }
@@ -343,5 +385,8 @@ body,
 	}
 	#skills-mobile {
 		display: block;
+	}
+	.hobby-img {
+		width: 300px;
 	}
 }
