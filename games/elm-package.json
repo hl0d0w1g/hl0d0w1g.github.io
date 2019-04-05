@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "Small Elm games",
-    "repository": "https://github.com/lcambero/lcambero.github.io.git",
+    "repository": "https://github.com/lcambero/lcambero.git",
     "license": "Apache 2.0",
     "source-directories": [
         "src",

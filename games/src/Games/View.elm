@@ -21,7 +21,7 @@ view : Model -> Html Msg
 view model =
     div [ class "container" ]
         [ div [ class "row" ]
-            [ div [ class "col" ]
+            [ div [ class "col text-center" ]
                 [ text "Coming soon!" ]
             ]
         ]

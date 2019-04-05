@@ -4,8 +4,9 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
 
 	<meta name="description" content="personal website">
 	<meta name="author" content="Luis Cambero Piqueras">
@@ -14,12 +15,12 @@
 	<title>lcambero</title>
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 	<!-- Font Awesome  -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600" rel="stylesheet">
@@ -67,6 +68,9 @@
 		</nav>
 	</header>
 	-->
+	<!-- <button type="button" class="btn btn-outline-success btn-lg"
+								onclick="this.blur(); games();">Play my games</button> -->
+
 
 
 	<!-- Home -->
@@ -82,8 +86,8 @@
 							<h1 id="surname">Cambero Piqueras</h1>
 						</div>
 					</div>
-					<div class="row px-3">
-						<div class="col d-none d-md-block text-center">
+					<div class="row justify-content-center px-3">
+						<div class="col-auto d-none d-md-block text-center typewriter">
 							<h2 id="actual-occupation">Electronic Engineer Student and Software Developer</h2>
 						</div>
 					</div>
@@ -92,35 +96,68 @@
 		</div>
 	</div>
 
-	<!-- About me --
+	<!-- About me -->
 	<div class="bg-second">
 		<div class="container">
 			<a name="aboutMe"></a>
 			<div class="row pt-5 pb-3">
 				<div class="col">
-					<hr class="h-line">
+					<hr class="h-line-2">
 					</hr>
 					<div class="row">
 						<div class="col text-center">
-							<h1 class="title">About me</h1>
+							<h1 class="title-2">What I love ❤</h1>
 						</div>
 					</div>
-					<hr class="h-line">
+					<hr class="h-line-2">
 					</hr>
-					<div class="row">
-						<div class="col p-3">
-							<div class="row justify-content-center pt-5">
-								<div class="col-auto">
-									<button type="button" class="btn btn-outline-success btn-lg" onclick="this.blur(); games();">Play my games</button>
+					<div class="row justify-content-center py-3">
+
+						<div class="col-auto">
+
+							<div class="card bg-dark text-white my-3">
+								<img class="img-fluid hobby-img" src="./images/electronics.jpg">
+								<div class="card-img-overlay">
+									<h4 class="card-title">Electronics</h4>
+									<p class="card-text">I love electronics, I consider it one of the bases of every
+										great project. Especially fast prototypes with Arduino
+										or Raspberry Pi.</p>
+									<p class="card-text">My last project
+										<a href="https://github.com/lcambero/ArduSonar" target="_blank"
+											class="project-link" style="text-decoration: none;">
+											here
+										</a>
+									</p>
 								</div>
 							</div>
+
 						</div>
+
+						<div class="col-auto">
+
+							<div class="card bg-dark text-white my-3">
+								<img class="img-fluid hobby-img" src="./images/programming.jpg">
+								<div class="card-img-overlay">
+									<h4 class="card-title">Programming</h4>
+									<p class="card-text">Programming is one of my passions. I created this page myself
+										learning right from the start. I'm currently working functional
+										programming.</p>
+									<p class="card-text">My last project
+										<a href="https://github.com/lcambero/planets" target="_blank"
+											class="project-link" style="text-decoration: none;">
+											here
+										</a>
+									</p>
+								</div>
+							</div>
+
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	-->
 
 	<!-- Experience -->
 	<div class="bg-general">
@@ -141,8 +178,9 @@
 						<div class="col p-3">
 							<!-- Cambrian Intelligence -->
 							<div class="row m-0 py-4">
-								<div class="col-12 col-lg-5 text-center py-2">
-									<a href="http://cambrianintelligence.com/" target="_blank" style="text-decoration: none;">
+								<div class="col-12 col-lg-5 text-center px-0 py-2">
+									<a href="http://cambrianintelligence.com/" target="_blank"
+										style="text-decoration: none;">
 										<img class="img-fluid company-img" src="images/cambrianintelligence.png">
 									</a>
 								</div>
@@ -150,7 +188,8 @@
 									<div class="row pb-2">
 										<div class="col">
 											<h3 class="info-1">Full Stack Developer Intern</h3>
-											<a href="http://cambrianintelligence.com/" target="_blank" style="text-decoration: none;">
+											<a href="http://cambrianintelligence.com/" target="_blank"
+												style="text-decoration: none;">
 												<h4 class="info-2">Cambrian Intelligence</h4>
 											</a>
 											<h5 class="date">June 2018 - Now</h5>
@@ -159,9 +198,12 @@
 									<div class="row">
 										<div class="col">
 											<p class="paragraph">
-												In my first work experience, I could be part of an artificial intelligence start-up, where I could design
-												and develop web user interfaces (in ELM) and back-end oriented to the collection and visualization of data
-												from them. The nature of the data processed by these platforms is in the field of health and biomedical
+												In my first work experience, I could be part of an artificial
+												intelligence start-up, where I could design
+												and develop web user interfaces (in ELM) and back-end oriented to the
+												collection and visualization of data
+												from them. The nature of the data processed by these platforms is in the
+												field of health and biomedical
 												applications.
 											</p>
 										</div>
@@ -170,7 +212,7 @@
 							</div>
 							<!-- UC3M -->
 							<div class="row m-0 py-4">
-								<div class="col-12 col-lg-5 text-center py-2">
+								<div class="col-12 col-lg-5 text-center px-0 py-2">
 									<a href="https://www.uc3m.es/Home" target="_blank" style="text-decoration: none;">
 										<img class="img-fluid company-img" src="images/uc3m.jpg">
 									</a>
@@ -179,7 +221,8 @@
 									<div class="row pb-2">
 										<div class="col">
 											<h3 class="info-1">Industrial Electronics and Automatic Engineering</h3>
-											<a href="https://www.uc3m.es/Home" target="_blank" style="text-decoration: none;">
+											<a href="https://www.uc3m.es/Home" target="_blank"
+												style="text-decoration: none;">
 												<h4 class="info-2">Universidad Carlos III de Madrid</h4>
 											</a>
 											<h5 class="date">2015 - Now</h5>
@@ -188,9 +231,12 @@
 									<div class="row">
 										<div class="col">
 											<p class="paragraph">
-												The university is a unique experience, where you can learn and share different points of view. The Carlos
-												III University is one of the best in Spain, with young and experienced teachers and laboratories of the
-												latest generation. I was also able to represent the university in mountain bike championships.
+												The university is a unique experience, where you can learn and share
+												different points of view. The Carlos
+												III University is one of the best in Spain, with young and experienced
+												teachers and laboratories of the
+												latest generation. I was also able to represent the university in
+												mountain bike championships.
 											</p>
 										</div>
 									</div>
@@ -214,35 +260,39 @@
 
 					<ul id="" class="nav nav-tabs justify-content-center" role="tablist">
 						<li class="nav-item">
-							<a class="nav-link active" id="skill-1-tab" data-toggle="tab" href="#skill-1" role="tab" aria-controls="skill-1"
-							 aria-selected="true">Main skills</a>
+							<a class="nav-link active" id="skill-1-tab" data-toggle="tab" href="#skill-1" role="tab"
+								aria-controls="skill-1" aria-selected="true">Main skills</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="skill-2-tab" data-toggle="tab" href="#skill-2" role="tab" aria-controls="skill-2"
-							 aria-selected="false">Programming</a>
+							<a class="nav-link" id="skill-2-tab" data-toggle="tab" href="#skill-2" role="tab"
+								aria-controls="skill-2" aria-selected="false">Programming</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="skill-3-tab" data-toggle="tab" href="#skill-3" role="tab" aria-controls="skill-3"
-							 aria-selected="false">Languages</a>
+							<a class="nav-link" id="skill-3-tab" data-toggle="tab" href="#skill-3" role="tab"
+								aria-controls="skill-3" aria-selected="false">Languages</a>
 						</li>
 					</ul>
 					<!-- Main skills -->
 					<div class="tab-content">
-						<div class="tab-pane fade show active" id="skill-1" role="tabpanel" aria-labelledby="skill-1-tab">
+						<div class="tab-pane fade show active" id="skill-1" role="tabpanel"
+							aria-labelledby="skill-1-tab">
 							<div class="row p-4">
 								<div class="col-md-4 text-center">
 									<i class="fas fa-book-reader skills-icon"></i>
-									<p class="paragraph">I'm a <b>fast learner</b>. I'm used to learning things on my own and
+									<p class="paragraph">I'm a <b>fast learner</b>. I'm used to learning things on my
+										own and
 										it's one of the things I like the most.</p>
 								</div>
 								<div class="col-md-4 text-center">
 									<i class="fas fa-users skills-icon"></i>
-									<p class="paragraph">I consider myself a person with <b>leadership</b> skills and <b>teamwork</b>, able to
+									<p class="paragraph">I consider myself a person with <b>leadership</b> skills and
+										<b>teamwork</b>, able to
 										carry out projects of all kinds.</p>
 								</div>
 								<div class="col-md-4 text-center">
 									<i class="fas fa-handshake skills-icon"></i>
-									<p class="paragraph"><b>Responsibility</b> is one of my main characteristics, paying attention and care in
+									<p class="paragraph"><b>Responsibility</b> is one of my main characteristics, paying
+										attention and care in
 										everything what I do.</p>
 								</div>
 							</div>
@@ -256,70 +306,88 @@
 											<div class="row pb-5">
 												<div class="col-md-4">
 													<div class="text-center">
-														<a href="https://elm-lang.org/" target="_blank" style="text-decoration: none;">
+														<a href="https://elm-lang.org/" target="_blank"
+															style="text-decoration: none;">
 															<h4 class="info-1 text-muted">Elm</h4>
 														</a>
 													</div>
-													<div class="progress" data-toggle="tooltip" data-placement="bottom" title="85%">
-														<div class="progress-bar progress-bar-striped progress-bar-animated elm-programming" role="progressbar"
-														 aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+													<div class="progress" data-toggle="tooltip" data-placement="bottom"
+														title="85%">
+														<div class="progress-bar progress-bar-striped progress-bar-animated elm-programming"
+															role="progressbar" aria-valuenow="85" aria-valuemin="0"
+															aria-valuemax="100"></div>
 													</div>
 												</div>
 												<div class="col-md-4">
 													<div class="text-center">
-														<a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" style="text-decoration: none;">
+														<a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank"
+															style="text-decoration: none;">
 															<h4 class="info-1 text-muted">C++</h4>
 														</a>
 													</div>
-													<div class="progress" data-toggle="tooltip" data-placement="bottom" title="70%">
-														<div class="progress-bar progress-bar-striped progress-bar-animated cplusplus-programming" role="progressbar"
-														 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+													<div class="progress" data-toggle="tooltip" data-placement="bottom"
+														title="70%">
+														<div class="progress-bar progress-bar-striped progress-bar-animated cplusplus-programming"
+															role="progressbar" aria-valuenow="70" aria-valuemin="0"
+															aria-valuemax="100"></div>
 													</div>
 												</div>
 												<div class="col-md-4">
 													<div class="text-center">
-														<a href="https://www.python.org/" target="_blank" style="text-decoration: none;">
+														<a href="https://www.python.org/" target="_blank"
+															style="text-decoration: none;">
 															<h4 class="info-1 text-muted">Python</h4>
 														</a>
 													</div>
-													<div class="progress" data-toggle="tooltip" data-placement="bottom" title="40%">
-														<div class="progress-bar progress-bar-striped progress-bar-animated python-programming" role="progressbar"
-														 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+													<div class="progress" data-toggle="tooltip" data-placement="bottom"
+														title="40%">
+														<div class="progress-bar progress-bar-striped progress-bar-animated python-programming"
+															role="progressbar" aria-valuenow="40" aria-valuemin="0"
+															aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
 											<div class="row pb-5">
 												<div class="col-md-4">
 													<div class="text-center">
-														<a href="https://en.wikipedia.org/wiki/HTML" target="_blank" style="text-decoration: none;">
+														<a href="https://en.wikipedia.org/wiki/HTML" target="_blank"
+															style="text-decoration: none;">
 															<h4 class="info-1 text-muted">HTML</h4>
 														</a>
 													</div>
-													<div class="progress" data-toggle="tooltip" data-placement="bottom" title="60%">
-														<div class="progress-bar progress-bar-striped progress-bar-animated html-programming" role="progressbar"
-														 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+													<div class="progress" data-toggle="tooltip" data-placement="bottom"
+														title="60%">
+														<div class="progress-bar progress-bar-striped progress-bar-animated html-programming"
+															role="progressbar" aria-valuenow="60" aria-valuemin="0"
+															aria-valuemax="100"></div>
 													</div>
 												</div>
 												<div class="col-md-4">
 													<div class="text-center">
-														<a href="https://www.javascript.com/" target="_blank" style="text-decoration: none;">
+														<a href="https://www.javascript.com/" target="_blank"
+															style="text-decoration: none;">
 															<h4 class="info-1 text-muted">JavaScript</h4>
 														</a>
 													</div>
-													<div class="progress" data-toggle="tooltip" data-placement="bottom" title="25%">
-														<div class="progress-bar progress-bar-striped progress-bar-animated javascript-programming" role="progressbar"
-														 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+													<div class="progress" data-toggle="tooltip" data-placement="bottom"
+														title="25%">
+														<div class="progress-bar progress-bar-striped progress-bar-animated javascript-programming"
+															role="progressbar" aria-valuenow="25" aria-valuemin="0"
+															aria-valuemax="100"></div>
 													</div>
 												</div>
 												<div class="col-md-4">
 													<div class="text-center">
-														<a href="https://www.java.com/en/" target="_blank" style="text-decoration: none;">
+														<a href="https://www.java.com/en/" target="_blank"
+															style="text-decoration: none;">
 															<h4 class="info-1 text-muted">Java</h4>
 														</a>
 													</div>
-													<div class="progress" data-toggle="tooltip" data-placement="bottom" title="35%">
-														<div class="progress-bar progress-bar-striped progress-bar-animated java-programming" role="progressbar"
-														 aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+													<div class="progress" data-toggle="tooltip" data-placement="bottom"
+														title="35%">
+														<div class="progress-bar progress-bar-striped progress-bar-animated java-programming"
+															role="progressbar" aria-valuenow="35" aria-valuemin="0"
+															aria-valuemax="100"></div>
 													</div>
 												</div>
 											</div>
@@ -338,7 +406,8 @@
 								</div>
 								<div class="col-md-4 text-center">
 									<img class="skills-flag-icon" src="./images/en.png">
-									<p class="paragraph">My English level is medium-high, but I'm working hard to improve it.</p>
+									<p class="paragraph">My English level is medium-high, but I'm working hard to
+										improve it.</p>
 								</div>
 								<div class="col-md-2"></div>
 							</div>
@@ -356,26 +425,30 @@
 				<div class="card">
 					<div class="card-header" id="headingOne">
 						<h5 class="mb-0 text-center">
-							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-							 aria-controls="collapseOne">Main skills</button>
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+								aria-expanded="true" aria-controls="collapseOne">Main skills</button>
 						</h5>
 					</div>
-					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#skillsAccordion">
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+						data-parent="#skillsAccordion">
 						<div class="card-body">
 							<div class="row">
 								<div class="col-12 text-center">
 									<i class="fas fa-book-reader skills-icon"></i>
-									<p class="paragraph">I'm a <b>fast learner</b>. I'm used to learning things on my own and
+									<p class="paragraph">I'm a <b>fast learner</b>. I'm used to learning things on my
+										own and
 										it's one of the things I like the most.</p>
 								</div>
 								<div class="col-12 text-center">
 									<i class="fas fa-users skills-icon"></i>
-									<p class="paragraph">I consider myself a person with <b>leadership</b> skills and <b>teamwork</b>, able to
+									<p class="paragraph">I consider myself a person with <b>leadership</b> skills and
+										<b>teamwork</b>, able to
 										carry out projects of all kinds.</p>
 								</div>
 								<div class="col-12 text-center">
 									<i class="fas fa-handshake skills-icon"></i>
-									<p class="paragraph"><b>Responsibility</b> is one of my main characteristics, paying attention and care in
+									<p class="paragraph"><b>Responsibility</b> is one of my main characteristics, paying
+										attention and care in
 										everything what I do.</p>
 								</div>
 							</div>
@@ -386,8 +459,9 @@
 				<div class="card">
 					<div class="card-header" id="headingTwo">
 						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-							 aria-expanded="false" aria-controls="collapseTwo">Programming</button>
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseTwo" aria-expanded="false"
+								aria-controls="collapseTwo">Programming</button>
 						</h5>
 					</div>
 					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#skillsAccordion">
@@ -400,63 +474,74 @@
 										</a>
 									</div>
 									<div class="progress" data-toggle="tooltip" data-placement="bottom" title="85%">
-										<div class="progress-bar progress-bar-striped progress-bar-animated elm-programming" role="progressbar"
-										 aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar progress-bar-striped progress-bar-animated elm-programming"
+											role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+										</div>
 									</div>
 								</div>
 								<div class="col-12 py-2">
 									<div class="text-center">
-										<a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" style="text-decoration: none;">
+										<a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank"
+											style="text-decoration: none;">
 											<h4 class="info-1 text-muted">C++</h4>
 										</a>
 									</div>
 									<div class="progress" data-toggle="tooltip" data-placement="bottom" title="70%">
-										<div class="progress-bar progress-bar-striped progress-bar-animated cplusplus-programming" role="progressbar"
-										 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar progress-bar-striped progress-bar-animated cplusplus-programming"
+											role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+										</div>
 									</div>
 								</div>
 								<div class="col-12 py-2">
 									<div class="text-center">
-										<a href="https://www.python.org/" target="_blank" style="text-decoration: none;">
+										<a href="https://www.python.org/" target="_blank"
+											style="text-decoration: none;">
 											<h4 class="info-1 text-muted">Python</h4>
 										</a>
 									</div>
 									<div class="progress" data-toggle="tooltip" data-placement="bottom" title="40%">
-										<div class="progress-bar progress-bar-striped progress-bar-animated python-programming" role="progressbar"
-										 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar progress-bar-striped progress-bar-animated python-programming"
+											role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+										</div>
 									</div>
 								</div>
 								<div class="col-12 py-2">
 									<div class="text-center">
-										<a href="https://en.wikipedia.org/wiki/HTML" target="_blank" style="text-decoration: none;">
+										<a href="https://en.wikipedia.org/wiki/HTML" target="_blank"
+											style="text-decoration: none;">
 											<h4 class="info-1 text-muted">HTML</h4>
 										</a>
 									</div>
 									<div class="progress" data-toggle="tooltip" data-placement="bottom" title="60%">
-										<div class="progress-bar progress-bar-striped progress-bar-animated html-programming" role="progressbar"
-										 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar progress-bar-striped progress-bar-animated html-programming"
+											role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+										</div>
 									</div>
 								</div>
 								<div class="col-12 py-2">
 									<div class="text-center">
-										<a href="https://www.javascript.com/" target="_blank" style="text-decoration: none;">
+										<a href="https://www.javascript.com/" target="_blank"
+											style="text-decoration: none;">
 											<h4 class="info-1 text-muted">JavaScript</h4>
 										</a>
 									</div>
 									<div class="progress" data-toggle="tooltip" data-placement="bottom" title="25%">
-										<div class="progress-bar progress-bar-striped progress-bar-animated javascript-programming" role="progressbar"
-										 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar progress-bar-striped progress-bar-animated javascript-programming"
+											role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+										</div>
 									</div>
 								</div>
 								<div class="col-12 py-2">
 									<div class="text-center">
-										<a href="https://www.java.com/en/" target="_blank" style="text-decoration: none;">
+										<a href="https://www.java.com/en/" target="_blank"
+											style="text-decoration: none;">
 											<h4 class="info-1 text-muted">Java</h4>
 										</a>
 									</div>
 									<div class="progress" data-toggle="tooltip" data-placement="bottom" title="35%">
-										<div class="progress-bar progress-bar-striped progress-bar-animated java-programming" role="progressbar"
-										 aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar progress-bar-striped progress-bar-animated java-programming"
+											role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -467,11 +552,13 @@
 				<div class="card">
 					<div class="card-header" id="headingThree">
 						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-							 aria-expanded="false" aria-controls="collapseThree">Languages</button>
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseThree" aria-expanded="false"
+								aria-controls="collapseThree">Languages</button>
 						</h5>
 					</div>
-					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#skillsAccordion">
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+						data-parent="#skillsAccordion">
 						<div class="card-body">
 							<div class="row p-4">
 								<div class="col-12 text-center">
@@ -480,7 +567,8 @@
 								</div>
 								<div class="col-12 text-center">
 									<img class="skills-flag-icon" src="./images/en.png">
-									<p class="paragraph">My English level is medium-high, but I'm working hard to improve it.</p>
+									<p class="paragraph">My English level is medium-high, but I'm working hard to
+										improve it.</p>
 								</div>
 							</div>
 						</div>
@@ -531,14 +619,16 @@
 				<a name="contact"></a>
 				<div class="row justify-content-center pt-5 pb-3 px-4">
 					<div class="col-auto">
-						<a href="https://www.linkedin.com/in/lcambero" target="_blank" data-toggle="tooltip" data-placement="bottom"
-						 title="LinkedIn">
+						<a href="https://www.linkedin.com/in/lcambero" target="_blank" data-toggle="tooltip"
+							data-placement="bottom" title="LinkedIn">
 							<i class="fab fa-linkedin-in social-network"></i>
 						</a>
-						<a href="https://github.com/lcambero" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Github">
+						<a href="https://github.com/lcambero" target="_blank" data-toggle="tooltip"
+							data-placement="bottom" title="Github">
 							<i class="fab fa-github social-network"></i>
 						</a>
-						<a href="https://gitlab.com/lcambero" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Gitlab">
+						<a href="https://gitlab.com/lcambero" target="_blank" data-toggle="tooltip"
+							data-placement="bottom" title="Gitlab">
 							<i class="fab fa-gitlab social-network"></i>
 						</a>
 					</div>
@@ -558,7 +648,7 @@
 							Luis Cambero Piqueras
 						</h5>
 						<h5 class="m-0 footer-info">
-							Madrid, Spain. 2018
+							Madrid, Spain. 2019
 						</h5>
 					</div>
 				</div>
@@ -570,12 +660,15 @@
 	<script src="js/main.js"></script>
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-	 crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-	 crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
 
 </body>
 
