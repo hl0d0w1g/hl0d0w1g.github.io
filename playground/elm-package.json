@@ -1,18 +1,18 @@
 {
     "version": "1.0.0",
-    "summary": "Small Elm games",
+    "summary": "Small Elm playground",
     "repository": "https://github.com/lcambero/lcambero.git",
     "license": "Apache 2.0",
     "source-directories": [
         "src",
-        "src/Games"
+        "src/Playground"
     ],
     "exposed-modules": [
-        "Games",
-        "Games.Types",
-        "Games.State",
-        "Games.Utils",
-        "Games.View"
+        "Playground",
+        "Playground.Types",
+        "Playground.State",
+        "Playground.Utils",
+        "Playground.View"
     ],
     "dependencies": {
         "elm-lang/core": "5.1.1 <= v < 6.0.0",

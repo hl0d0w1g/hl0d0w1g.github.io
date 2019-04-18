@@ -1,4 +1,4 @@
-module Games exposing (main)
+module Playground exposing (main)
 
 {-| Main of the app
 
@@ -9,10 +9,10 @@ module Games exposing (main)
 
 -}
 
-import Games.State exposing (init, subscriptions, update)
-import Games.Types exposing (Model, Msg)
-import Games.View exposing (view)
 import Html exposing (program)
+import Playground.State exposing (init, subscriptions, update)
+import Playground.Types exposing (Model, Msg)
+import Playground.View exposing (view)
 
 
 
