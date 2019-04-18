@@ -36,43 +36,6 @@
 
 <body>
 
-	<!-- Header --
-	<header>
-		<nav id="navbar" class="navbar fixed-top navbar-light">
-			<a class="navbar-brand" href="#"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDiv" aria-controls="navbarDiv"
-			 aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarDiv">
-				<ul class="navbar-nav mr-auto">
-					--
-		        			<li id="navbar-element" class="nav-item">
-		            			<a class="nav-link" href="#aboutMe">About me</a>
-							</li>
-							--
-					<li id="navbar-element" class="nav-item">
-						<a class="nav-link" href="#experience">Experience</a>
-					</li>
-					<li id="navbar-element" class="nav-item">
-						<a class="nav-link" href="#skills">Skills</a>
-					</li>
-					<li id="navbar-element" class="nav-item">
-						<a class="nav-link" href="#values">My method</a>
-					</li>
-					<li id="navbar-element" class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-	-->
-	<!-- <button type="button" class="btn btn-outline-success btn-lg"
-								onclick="this.blur(); games();">Play my games</button> -->
-
-
-
 	<!-- Home -->
 	<div id="profile-img" class="container-fluid">
 		<div class="container" style="height: 80%;">
@@ -87,7 +50,7 @@
 						</div>
 					</div>
 					<div class="row justify-content-center px-3">
-						<div class="col-auto d-none d-md-block text-center typewriter">
+						<div class="col-auto d-none d-lg-block text-center typewriter">
 							<h2 id="actual-occupation">Electronic Engineer Student and Software Developer</h2>
 						</div>
 					</div>
@@ -113,19 +76,19 @@
 					</hr>
 					<div class="row justify-content-center py-3">
 
-						<div class="col-auto">
+						<div class="col-auto p-md-3 py-3 px-0">
 
-							<div class="card bg-dark text-white my-3">
+							<div class="card bg-dark text-white">
 								<img class="img-fluid hobby-img" src="./images/electronics.jpg">
 								<div class="card-img-overlay">
 									<h4 class="card-title">Electronics</h4>
 									<p class="card-text">I love electronics, I consider it one of the bases of every
 										great project. Especially fast prototypes with Arduino
 										or Raspberry Pi.</p>
-									<p class="card-text">My last project
+									<p class="card-text">
 										<a href="https://github.com/lcambero/ArduSonar" target="_blank"
 											class="project-link" style="text-decoration: none;">
-											here
+											My last project
 										</a>
 									</p>
 								</div>
@@ -133,19 +96,19 @@
 
 						</div>
 
-						<div class="col-auto">
+						<div class="col-auto p-md-3 py-3 px-0">
 
-							<div class="card bg-dark text-white my-3">
+							<div class="card bg-dark text-white">
 								<img class="img-fluid hobby-img" src="./images/programming.jpg">
 								<div class="card-img-overlay">
 									<h4 class="card-title">Programming</h4>
 									<p class="card-text">Programming is one of my passions. I created this page myself
 										learning right from the start. I'm currently working functional
 										programming.</p>
-									<p class="card-text">My last project
+									<p class="card-text">
 										<a href="https://github.com/lcambero/planets" target="_blank"
 											class="project-link" style="text-decoration: none;">
-											here
+											My last project
 										</a>
 									</p>
 								</div>
@@ -177,14 +140,14 @@
 					<div class="row">
 						<div class="col p-3">
 							<!-- Cambrian Intelligence -->
-							<div class="row m-0 py-4">
-								<div class="col-12 col-lg-5 text-center px-0 py-2">
+							<div class="row m-0 py-4 justify-content-center">
+								<div class="col-12 col-lg-5 text-center py-2 px-0">
 									<a href="http://cambrianintelligence.com/" target="_blank"
 										style="text-decoration: none;">
 										<img class="img-fluid company-img" src="images/cambrianintelligence.png">
 									</a>
 								</div>
-								<div class="col-12 col-lg-6 text-left py-2 px-1">
+								<div class="col-12 col-lg-6 text-left p-2">
 									<div class="row pb-2">
 										<div class="col">
 											<h3 class="info-1">Full Stack Developer Intern</h3>
@@ -211,13 +174,13 @@
 								</div>
 							</div>
 							<!-- UC3M -->
-							<div class="row m-0 py-4">
-								<div class="col-12 col-lg-5 text-center px-0 py-2">
+							<div class="row m-0 py-4 justify-content-center">
+								<div class="col-12 col-lg-5 text-center py-2 px-0">
 									<a href="https://www.uc3m.es/Home" target="_blank" style="text-decoration: none;">
 										<img class="img-fluid company-img" src="images/uc3m.jpg">
 									</a>
 								</div>
-								<div class="col-12 col-lg-6 text-left py-2 px-1">
+								<div class="col-12 col-lg-6 text-left p-2">
 									<div class="row pb-2">
 										<div class="col">
 											<h3 class="info-1">Industrial Electronics and Automatic Engineering</h3>
@@ -254,7 +217,7 @@
 	<div class="bg-general">
 		<a name="skills"></a>
 		<!-- Big screen version -->
-		<div id="skills-no-mobile" class="container py-4">
+		<div class="container py-4 d-md-block d-none">
 			<div class="row">
 				<div class="col">
 
@@ -419,7 +382,7 @@
 		</div>
 
 		<!-- Mobile version -->
-		<div id="skills-mobile">
+		<div class="d-md-none d-block">
 			<div class="accordion" id="skillsAccordion">
 				<!-- Main skills -->
 				<div class="card">
