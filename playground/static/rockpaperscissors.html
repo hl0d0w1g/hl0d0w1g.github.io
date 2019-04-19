@@ -2,7 +2,7 @@
 <html>
 <header>
 
-	<title>lcambero playground</title>
+	<title>Rock Paper Scissors</title>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -16,22 +16,22 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600" rel="stylesheet">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="../css/playground.css">
+	<link rel="stylesheet" href="../../css/playground.css">
 
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="../images/favicon.png" />
+	<link rel="icon" type="image/png" href="../../images/favicon.png" />
 	<!-- the favicon is from https://fontawesome.com -->
 
 </header>
 
 <body>
 
-	<div id="playground"></div>
+	<div id="rockpaperscissors"></div>
 
-	<script src="./static/playground.js"></script>
+	<script src="./rockpaperscissors.js"></script>
 	<script>
-		var playground = document.getElementById('playground');
-		var playgroundApp = Elm.Playground.embed(playground);
+		var rockPaperScissors = document.getElementById('rockpaperscissors');
+		var rockPaperScissorsApp = Elm.RockPaperScissors.embed(rockPaperScissors);
 	</script>
 
 </body>

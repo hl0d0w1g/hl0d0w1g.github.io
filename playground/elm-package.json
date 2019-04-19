@@ -5,18 +5,17 @@
     "license": "Apache 2.0",
     "source-directories": [
         "src",
-        "src/Playground"
+        "src/Playground",
+        "src/RockPaperScissors"
     ],
     "exposed-modules": [
         "Playground",
-        "Playground.Types",
-        "Playground.State",
-        "Playground.Utils",
-        "Playground.View"
+        "RockPaperScissors"
     ],
     "dependencies": {
         "elm-lang/core": "5.1.1 <= v < 6.0.0",
-        "elm-lang/html": "2.0.0 <= v < 3.0.0"
+        "elm-lang/html": "2.0.0 <= v < 3.0.0",
+        "elm-lang/navigation": "2.1.0 <= v < 3.0.0"
     },
     "elm-version": "0.18.0 <= v < 0.19.0"
 }

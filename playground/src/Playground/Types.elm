@@ -1,11 +1,21 @@
-module Playground.Types exposing (Model, Msg(..))
+module Playground.Types exposing
+    ( Model
+    , Msg(..)
+    , SelectedProject(..)
+    )
 
 {-| This module contains the types used all over the page.
 
 
 # Basic Types
 
-@docs Model, Msg
+@docs Model
+@docs Msg
+
+
+# Secondary Types
+
+@docs SelectedProject
 
 -}
 
@@ -13,11 +23,18 @@ module Playground.Types exposing (Model, Msg(..))
 {-| Defines the messages used.
 -}
 type Msg
-    = Message
+    = LaunchProject SelectedProject
 
 
 {-| Holds the Model of the page.
 -}
 type alias Model =
-    { example : String
+    { selectedProject : SelectedProject
     }
+
+
+{-| Defines the playground project that has been selected.
+-}
+type SelectedProject
+    = NoProject
+    | RockPaperScissors

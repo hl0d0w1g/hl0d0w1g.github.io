@@ -9,7 +9,8 @@ module Playground.State exposing (init, update, subscriptions)
 
 -}
 
-import Playground.Types exposing (Model, Msg(..))
+import Navigation exposing (load)
+import Playground.Types exposing (Model, Msg(..), SelectedProject(..))
 
 
 {-| Defines the input model and command messages for the initialization.
@@ -23,7 +24,7 @@ init =
 -}
 initModel : Model
 initModel =
-    { example = ""
+    { selectedProject = NoProject
     }
 
 
@@ -39,8 +40,13 @@ initCmdMsg =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        Message ->
-            ( model, Cmd.none )
+        LaunchProject selectedProject ->
+            case selectedProject of
+                NoProject ->
+                    ( model, Cmd.none )
+
+                RockPaperScissors ->
+                    ( { model | selectedProject = RockPaperScissors }, load "./static/rockpaperscissors.html" )
 
 
 {-| Used for listing for external input.

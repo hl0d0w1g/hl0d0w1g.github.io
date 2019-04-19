@@ -51,3 +51,45 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
+
+.card {
+    margin-bottom: 2em !important;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.card-img {
+	max-width: 400px;
+}
+
+.card-img-overlay{
+	background-color: rgba(0, 0, 0, 0.7) !important; 
+}
+
+.rock-paper-scissors__scoreboard {
+    background-color: bisque;
+    border-radius: 1em;
+}
+
+.rock-paper-scissors__scoreboard-computer-color {
+    width: 1em;
+    background-color: red;
+    border-radius: 1em 0em 0em 0em;
+}
+
+.rock-paper-scissors__scoreboard-user-color {
+    width: 1em;
+    background-color: blue;
+    border-radius: 0em 0em 0em 1em;
+}
+
+.rock-paper-scissors__scoreboard-text {
+    color: var(--color-2);
+	font-size: 2.5em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
