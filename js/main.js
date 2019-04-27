@@ -1,3 +1,3 @@
 function visitPlaygroundButton() {
-	window.location.href = './playground/playground.html'
+	window.location.href = './html/playground/index.html'
 }
