@@ -3,5 +3,5 @@ function goBack() {
 }
 
 function rockPaperScissors() {
-    window.location.href = './html/playground/rock-paper-scissors.html'
+    window.location.href = './rock-paper-scissors.html'
 }
