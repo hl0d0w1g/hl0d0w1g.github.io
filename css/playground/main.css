@@ -1,0 +1,98 @@
+:root {
+    --color-1: #E5E8E8; /* gray */
+    --color-2: #2C3E50; /* black */
+    --color-3: #7DCEA0; /* green lime */
+    --color-4: #27AE60; /* dark green lime */
+}
+
+::-webkit-scrollbar {
+	position: fixed;
+	right: 0;
+    width: .25em;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-3); 
+    border-radius: .5em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-2); 
+}
+
+html,
+body {
+    background-color: var(--color-2);
+  	height: 100%;
+}
+
+.hr-line-1 {
+    height: .05em;
+    border: 0;
+    background-color: var(--color-3);
+    margin: 0px;
+}
+
+.title-1 {
+	margin: 0px;
+	color: var(--color-3);
+	font-size: 3em;
+	font-family: 'Raleway', serif;
+	font-weight: 300;
+}
+
+.abstract {
+    color: var(--color-1);
+	font-size: 1.3em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+.card {
+    margin-bottom: 2em !important;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.card-img {
+	max-width: 400px;
+}
+
+.card-img-overlay {
+	background-color: rgba(0, 0, 0, 0.7) !important; 
+}
+
+.project-link {
+	color: var(--color-3);
+	transition: color 0.3s;
+}
+
+.project-link:hover {
+	color: var(--color-4);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.back-button {
+    color: var(--color-3);
+    font-size: 2em;
+    transition: background-color .3s;
+    border-radius: .5em;
+}
+
+.back-button:hover {
+    cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.3) !important; 
+}
