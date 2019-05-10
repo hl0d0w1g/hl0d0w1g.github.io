@@ -9094,11 +9094,11 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_Utils$gameWinnerMessage = F2
 				var _p2 = computerChoice;
 				switch (_p2.ctor) {
 					case 'Rock':
-						return 'Rock equals Rock. It\'s a draw!';
+						return 'Rock equals Rock. It\'s a draw! ⚔️';
 					case 'Paper':
-						return 'Rock loses to Paper. You lost!';
+						return 'Rock loses to Paper. You lost! 💩';
 					case 'Scissors':
-						return 'Rock beats Scissors. You win!';
+						return 'Rock beats Scissors. You win! 🔥';
 					default:
 						return '';
 				}
@@ -9106,11 +9106,11 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_Utils$gameWinnerMessage = F2
 				var _p3 = computerChoice;
 				switch (_p3.ctor) {
 					case 'Rock':
-						return 'Paper covers Rock. You win!';
+						return 'Paper covers Rock. You win! 🔥';
 					case 'Paper':
-						return 'Paper equals Paper. It\'s a draw!';
+						return 'Paper equals Paper. It\'s a draw! ⚔️';
 					case 'Scissors':
-						return 'Paper loses to Scissors. You lost!';
+						return 'Paper loses to Scissors. You lost! 💩';
 					default:
 						return '';
 				}
@@ -9118,11 +9118,11 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_Utils$gameWinnerMessage = F2
 				var _p4 = computerChoice;
 				switch (_p4.ctor) {
 					case 'Rock':
-						return 'Scissors loses to Rock. You lost!';
+						return 'Scissors loses to Rock. You lost! 💩';
 					case 'Paper':
-						return 'Scissors cuts Paper. You win!';
+						return 'Scissors cuts Paper. You win! 🔥';
 					case 'Scissors':
-						return 'Scissors equals Scissors. It\'s a draw!';
+						return 'Scissors equals Scissors. It\'s a draw! ⚔️';
 					default:
 						return '';
 				}
@@ -9303,7 +9303,7 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_View$scissors = function (mo
 					_0: _elm_lang$html$Html_Attributes$class(
 						A2(
 							_elm_lang$core$Basics_ops['++'],
-							'fas fa-hand-scissors choice ',
+							'fas fa-hand-scissors user-choice ',
 							A3(_lcambero$rock_paper_scissors$RockPaperScissors_Utils$addGameResultClass, _lcambero$rock_paper_scissors$RockPaperScissors_Types$Scissors, model.userChoice, model.winner))),
 					_1: {ctor: '[]'}
 				},
@@ -9329,7 +9329,7 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_View$paper = function (model
 					_0: _elm_lang$html$Html_Attributes$class(
 						A2(
 							_elm_lang$core$Basics_ops['++'],
-							'fas fa-hand-paper choice ',
+							'fas fa-hand-paper user-choice ',
 							A3(_lcambero$rock_paper_scissors$RockPaperScissors_Utils$addGameResultClass, _lcambero$rock_paper_scissors$RockPaperScissors_Types$Paper, model.userChoice, model.winner))),
 					_1: {ctor: '[]'}
 				},
@@ -9355,7 +9355,7 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_View$rock = function (model)
 					_0: _elm_lang$html$Html_Attributes$class(
 						A2(
 							_elm_lang$core$Basics_ops['++'],
-							'fas fa-hand-rock choice ',
+							'fas fa-hand-rock user-choice ',
 							A3(_lcambero$rock_paper_scissors$RockPaperScissors_Utils$addGameResultClass, _lcambero$rock_paper_scissors$RockPaperScissors_Types$Rock, model.userChoice, model.winner))),
 					_1: {ctor: '[]'}
 				},
@@ -9477,6 +9477,133 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_View$choices = function (mod
 			_1: {ctor: '[]'}
 		});
 };
+var _lcambero$rock_paper_scissors$RockPaperScissors_View$winnerMsg = function (model) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('row justify-content-center p-3'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$class('col-auto'),
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$span,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$class('winner-msg'),
+							_1: {ctor: '[]'}
+						},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text(
+								A2(_lcambero$rock_paper_scissors$RockPaperScissors_Utils$gameWinnerMessage, model.userChoice, model.computerChoice)),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				}),
+			_1: {ctor: '[]'}
+		});
+};
+var _lcambero$rock_paper_scissors$RockPaperScissors_View$computerMsg = function (model) {
+	return (!_elm_lang$core$Native_Utils.eq(model.computerChoice, _lcambero$rock_paper_scissors$RockPaperScissors_Types$NoChoice)) ? A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('row justify-content-center pt-5 pb-2'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$class('col-auto'),
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$span,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$class('computer-msg'),
+							_1: {ctor: '[]'}
+						},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('Computer says'),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('col-auto'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: function () {
+							var _p0 = model.computerChoice;
+							switch (_p0.ctor) {
+								case 'Rock':
+									return A2(
+										_elm_lang$html$Html$i,
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$class('fas fa-hand-rock computer-choice'),
+											_1: {ctor: '[]'}
+										},
+										{ctor: '[]'});
+								case 'Paper':
+									return A2(
+										_elm_lang$html$Html$i,
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$class('fas fa-hand-paper computer-choice'),
+											_1: {ctor: '[]'}
+										},
+										{ctor: '[]'});
+								case 'Scissors':
+									return A2(
+										_elm_lang$html$Html$i,
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$class('fas fa-hand-scissors computer-choice'),
+											_1: {ctor: '[]'}
+										},
+										{ctor: '[]'});
+								default:
+									return A2(
+										_elm_lang$html$Html$i,
+										{ctor: '[]'},
+										{ctor: '[]'});
+							}
+						}(),
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			}
+		}) : A2(
+		_elm_lang$html$Html$div,
+		{ctor: '[]'},
+		{ctor: '[]'});
+};
 var _lcambero$rock_paper_scissors$RockPaperScissors_View$scoreboard = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
@@ -9527,11 +9654,68 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_View$scoreboard = function (
 												_elm_lang$html$Html$div,
 												{
 													ctor: '::',
-													_0: _elm_lang$html$Html_Attributes$class('col-auto scoreboard-computer-color'),
+													_0: _elm_lang$html$Html_Attributes$class('col-8 text-center'),
 													_1: {ctor: '[]'}
 												},
-												{ctor: '[]'}),
+												{
+													ctor: '::',
+													_0: A2(
+														_elm_lang$html$Html$span,
+														{
+															ctor: '::',
+															_0: _elm_lang$html$Html_Attributes$class('scoreboard-text'),
+															_1: {ctor: '[]'}
+														},
+														{
+															ctor: '::',
+															_0: _elm_lang$html$Html$text('Computer'),
+															_1: {ctor: '[]'}
+														}),
+													_1: {ctor: '[]'}
+												}),
 											_1: {
+												ctor: '::',
+												_0: A2(
+													_elm_lang$html$Html$div,
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html_Attributes$class('col-auto border-left'),
+														_1: {ctor: '[]'}
+													},
+													{
+														ctor: '::',
+														_0: A2(
+															_elm_lang$html$Html$span,
+															{
+																ctor: '::',
+																_0: _elm_lang$html$Html_Attributes$class(
+																	A2(
+																		_elm_lang$core$Basics_ops['++'],
+																		'scoreboard-text ',
+																		(_elm_lang$core$Native_Utils.cmp(model.computerScore, model.userScore) > 0) ? 'scoreboard-winner' : '')),
+																_1: {ctor: '[]'}
+															},
+															{
+																ctor: '::',
+																_0: _elm_lang$html$Html$text(
+																	_elm_lang$core$Basics$toString(model.computerScore)),
+																_1: {ctor: '[]'}
+															}),
+														_1: {ctor: '[]'}
+													}),
+												_1: {ctor: '[]'}
+											}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$div,
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html_Attributes$class('row  border-top'),
+												_1: {ctor: '[]'}
+											},
+											{
 												ctor: '::',
 												_0: A2(
 													_elm_lang$html$Html$div,
@@ -9551,7 +9735,7 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_View$scoreboard = function (
 															},
 															{
 																ctor: '::',
-																_0: _elm_lang$html$Html$text('Computer'),
+																_0: _elm_lang$html$Html$text('User'),
 																_1: {ctor: '[]'}
 															}),
 														_1: {ctor: '[]'}
@@ -9575,97 +9759,18 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_View$scoreboard = function (
 																		A2(
 																			_elm_lang$core$Basics_ops['++'],
 																			'scoreboard-text ',
-																			(_elm_lang$core$Native_Utils.cmp(model.computerScore, model.userScore) > 0) ? 'scoreboard-winner' : '')),
+																			(_elm_lang$core$Native_Utils.cmp(model.userScore, model.computerScore) > 0) ? 'scoreboard-winner' : '')),
 																	_1: {ctor: '[]'}
 																},
 																{
 																	ctor: '::',
 																	_0: _elm_lang$html$Html$text(
-																		_elm_lang$core$Basics$toString(model.computerScore)),
+																		_elm_lang$core$Basics$toString(model.userScore)),
 																	_1: {ctor: '[]'}
 																}),
 															_1: {ctor: '[]'}
 														}),
 													_1: {ctor: '[]'}
-												}
-											}
-										}),
-									_1: {
-										ctor: '::',
-										_0: A2(
-											_elm_lang$html$Html$div,
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html_Attributes$class('row  border-top'),
-												_1: {ctor: '[]'}
-											},
-											{
-												ctor: '::',
-												_0: A2(
-													_elm_lang$html$Html$div,
-													{
-														ctor: '::',
-														_0: _elm_lang$html$Html_Attributes$class('col-auto scoreboard-user-color'),
-														_1: {ctor: '[]'}
-													},
-													{ctor: '[]'}),
-												_1: {
-													ctor: '::',
-													_0: A2(
-														_elm_lang$html$Html$div,
-														{
-															ctor: '::',
-															_0: _elm_lang$html$Html_Attributes$class('col-8 text-center'),
-															_1: {ctor: '[]'}
-														},
-														{
-															ctor: '::',
-															_0: A2(
-																_elm_lang$html$Html$span,
-																{
-																	ctor: '::',
-																	_0: _elm_lang$html$Html_Attributes$class('scoreboard-text'),
-																	_1: {ctor: '[]'}
-																},
-																{
-																	ctor: '::',
-																	_0: _elm_lang$html$Html$text('User'),
-																	_1: {ctor: '[]'}
-																}),
-															_1: {ctor: '[]'}
-														}),
-													_1: {
-														ctor: '::',
-														_0: A2(
-															_elm_lang$html$Html$div,
-															{
-																ctor: '::',
-																_0: _elm_lang$html$Html_Attributes$class('col-auto border-left'),
-																_1: {ctor: '[]'}
-															},
-															{
-																ctor: '::',
-																_0: A2(
-																	_elm_lang$html$Html$span,
-																	{
-																		ctor: '::',
-																		_0: _elm_lang$html$Html_Attributes$class(
-																			A2(
-																				_elm_lang$core$Basics_ops['++'],
-																				'scoreboard-text ',
-																				(_elm_lang$core$Native_Utils.cmp(model.userScore, model.computerScore) > 0) ? 'scoreboard-winner' : '')),
-																		_1: {ctor: '[]'}
-																	},
-																	{
-																		ctor: '::',
-																		_0: _elm_lang$html$Html$text(
-																			_elm_lang$core$Basics$toString(model.userScore)),
-																		_1: {ctor: '[]'}
-																	}),
-																_1: {ctor: '[]'}
-															}),
-														_1: {ctor: '[]'}
-													}
 												}
 											}),
 										_1: {ctor: '[]'}
@@ -9673,45 +9778,7 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_View$scoreboard = function (
 								}),
 							_1: {ctor: '[]'}
 						}),
-					_1: {
-						ctor: '::',
-						_0: A2(
-							_elm_lang$html$Html$div,
-							{
-								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$class('row justify-content-center p-5'),
-								_1: {ctor: '[]'}
-							},
-							{
-								ctor: '::',
-								_0: A2(
-									_elm_lang$html$Html$div,
-									{
-										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$class('col-auto'),
-										_1: {ctor: '[]'}
-									},
-									{
-										ctor: '::',
-										_0: A2(
-											_elm_lang$html$Html$span,
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html_Attributes$class('winner-msg'),
-												_1: {ctor: '[]'}
-											},
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html$text(
-													A2(_lcambero$rock_paper_scissors$RockPaperScissors_Utils$gameWinnerMessage, model.userChoice, model.computerChoice)),
-												_1: {ctor: '[]'}
-											}),
-										_1: {ctor: '[]'}
-									}),
-								_1: {ctor: '[]'}
-							}),
-						_1: {ctor: '[]'}
-					}
+					_1: {ctor: '[]'}
 				}),
 			_1: {ctor: '[]'}
 		});
@@ -9790,8 +9857,16 @@ var _lcambero$rock_paper_scissors$RockPaperScissors_View$view = function (model)
 				_0: _lcambero$rock_paper_scissors$RockPaperScissors_View$scoreboard(model),
 				_1: {
 					ctor: '::',
-					_0: _lcambero$rock_paper_scissors$RockPaperScissors_View$choices(model),
-					_1: {ctor: '[]'}
+					_0: _lcambero$rock_paper_scissors$RockPaperScissors_View$computerMsg(model),
+					_1: {
+						ctor: '::',
+						_0: _lcambero$rock_paper_scissors$RockPaperScissors_View$winnerMsg(model),
+						_1: {
+							ctor: '::',
+							_0: _lcambero$rock_paper_scissors$RockPaperScissors_View$choices(model),
+							_1: {ctor: '[]'}
+						}
+					}
 				}
 			}
 		});
