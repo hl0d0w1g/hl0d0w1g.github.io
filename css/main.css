@@ -191,6 +191,8 @@ body,
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
+	text-align: justify;
+  	text-justify: inter-word;
 }
 
 .company-img {
@@ -300,7 +302,7 @@ body,
 }
 
 .python-programming {
-	width: 40%;
+	width: 75%;
 	background-color: #3572a5 !important;
 }
 
