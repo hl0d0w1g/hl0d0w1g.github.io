@@ -116,7 +116,7 @@ body,
 }
 
 .social-network-header {
-	padding: 5px 30px 5px 30px;
+	padding: 5px 15px 5px 15px;
 	color: var(--color-3);
 	text-decoration: none;
 	font-size: 30px;
@@ -380,7 +380,7 @@ body,
 }
 
 .social-network {
-	padding: 5px 30px 5px 30px;
+	padding: 5px 15px 5px 15px;
 	color: var(--color-1);
 	text-decoration: none;
 	font-size: 30px;
@@ -409,6 +409,14 @@ body,
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
+}
+
+.credits {
+	transition: color 0.3s;
+}
+
+.credits:hover {
+	color: var(--color-1);
 }
 
 @media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
