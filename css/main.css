@@ -127,6 +127,12 @@ body,
 	color: var(--color-1);
 }
 
+.icon-thingiverse {
+	background-image:url('./images/thingiverse_icon.svg');
+	height:30px;
+	width:30px;
+}
+
 .typewriter h2 {
 	overflow: hidden; 
 	border-right: .15em solid orange;
@@ -327,7 +333,7 @@ body,
 }
 
 .python-programming {
-	width: 75%;
+	width: 80%;
 	background-color: #3572a5 !important;
 }
 
@@ -379,7 +385,7 @@ body,
 	background-color: var(--color-4);
 }
 
-.social-network {
+.social-network-footer {
 	padding: 5px 15px 5px 15px;
 	color: var(--color-1);
 	text-decoration: none;
@@ -387,7 +393,7 @@ body,
 	transition: color 0.3s;
 }
 
-.social-network:hover {
+.social-network-footer:hover {
 	color: var(--color-2);
 }
 
