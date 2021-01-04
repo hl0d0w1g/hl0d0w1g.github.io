@@ -127,12 +127,6 @@ body,
 	color: var(--color-1);
 }
 
-.icon-thingiverse {
-	background-image:url('./images/thingiverse_icon.svg');
-	height:30px;
-	width:30px;
-}
-
 .typewriter h2 {
 	overflow: hidden; 
 	border-right: .15em solid orange;
