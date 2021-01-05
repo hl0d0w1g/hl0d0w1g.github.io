@@ -208,7 +208,7 @@ html, body, .container-fluid {
 }
 
 .tl-container {
-	padding: 10px 40px;
+	padding: 10px 30px 20px 30px;
 	position: relative;
 	background-color: inherit;
 	width: 50%;
@@ -297,9 +297,15 @@ html, body, .container-fluid {
 	text-decoration: none;
 }
 
+.subinfo-1 {
+	font-size: 100%;
+	font-family: 'Raleway', serif;
+	font-weight: 300;
+}
+
 .info-2 {
 	color: var(--color-1);
-	font-size: 120%;
+	font-size: 100%;
 	font-family: 'Raleway', serif;
 	font-weight: 300;
 	transition: color 0.3s;
@@ -309,17 +315,12 @@ html, body, .container-fluid {
 	color: var(--color-5);
 }
 
-.date {
-	font-size: 100%;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
-}
-
 .paragraph {
 	color: var(--color-6);
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
+	text-align: justify;
 	text-justify: inter-word;
 }
 
@@ -439,6 +440,9 @@ html, body, .container-fluid {
 	}
 	.hobby-img {
 		width: 19.5em;
+	}
+	.paragraph {
+		text-align: left;
 	}
 }
 
