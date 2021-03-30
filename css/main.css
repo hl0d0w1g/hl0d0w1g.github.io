@@ -154,14 +154,23 @@ html, body, .container-fluid {
 	}
 }
 
+.intro-paragraph {
+	color: var(--color-3);
+	font-size: 120%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 .hobby-img {
 	width: 100%;
-	max-width: 460px;
+	max-width: 20em;
 	border-radius: .5em;
 }
 
 .card-img-overlay {
-	background-color: rgba(0, 0, 0, 0.55) !important;
+	background-color: rgba(0, 0, 0, 0.75) !important;
 	border-radius: .5em !important;
 }
 
@@ -439,7 +448,10 @@ html, body, .container-fluid {
 		padding: .75em !important;
 	}
 	.hobby-img {
-		width: 19.5em;
+		width: 18em;
+	}
+	.intro-paragraph {
+		text-align: left;
 	}
 	.paragraph {
 		text-align: left;
