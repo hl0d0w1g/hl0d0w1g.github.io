@@ -10,7 +10,7 @@ Here you can get to know me a little better, what I like and what I've done so f
 
 ## Last update
 
-In construction
+March 30, 2021
 
 ## License
 
