@@ -82,7 +82,7 @@ html, body, .container-fluid {
 }
 
 #profile-img {
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../images/profile.png);
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../images/profile.webp);
 	background-size: cover;
 	background-color: var(--color-3);
 	background-position: center;
@@ -379,7 +379,7 @@ html, body, .container-fluid {
 }
 
 #values-img {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/values.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/values.webp);
 	background-color: var(--color-3);
 	background-size: cover;
 	background-position: 50% 48%;
