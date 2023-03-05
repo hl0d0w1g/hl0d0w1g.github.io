@@ -82,7 +82,7 @@ html, body, .container-fluid {
 }
 
 #profile-img {
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../images/profile.webp);
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../images/profile_.webp);
 	background-size: cover;
 	background-color: var(--color-3);
 	background-position: center;
